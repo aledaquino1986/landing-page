@@ -48,7 +48,7 @@
   <section class="hero">
     <h2>Start playing, right now</h2>
 
-    <button>Contact us now</button>
+    <input type="submit" value="Contact us now">
   </section>
 
   <section id="services">
@@ -101,8 +101,7 @@
         </div>
 
         <h4>Expert attention</h4>
-        <p>We know our stuff. We love what we do. And, most importantly, we play! If you're looking for gaming experts,
-          you've just found them. </p>
+        <p>We know our stuff. We love what we do. And, most importantly, we play! I </p>
       </div>
 
 
@@ -118,15 +117,60 @@
     </header>
 
     <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/BsZccA1nMXs" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/BsZccA1nMXs"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
 
     </div>
 
-
-
   </section>
+
+
+  <section id="contact">
+    <div class="wrapper">
+      <header class="form-head">
+        <h2>Contact us</h2>
+      </header>
+
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <div class="name">
+          <label for="name">
+            Name:
+          </label>
+          <input type="name" placeholder="Type in your name">
+        </div>
+
+        <div class="email">
+          <label for="email"> Email: </label>
+          <input type="email" id="email" placeholder="example: alex@gmail.com">
+        </div>
+
+        <input type="submit" value="submit" id="submit">
+
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-wrapper">
+      <h5>Alejandro Aquino &copy</h5>
+      <ul>
+        <li>
+          <img src="/icons/twitter.svg" alt="">
+        </li>
+        <li>
+          <img src="/icons/instagram.svg" alt="">
+        </li>
+
+        <li>
+          <img src="/icons/youtube.svg" alt="">
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+
 
 
 

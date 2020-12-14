@@ -43,7 +43,7 @@ p {
   font-size: 2rem;
 }
 
-button {
+input[type="submit"] {
   padding: 2rem 6rem;
   border: none;
   outline: none;
@@ -56,13 +56,13 @@ button {
   transition: 0.5s;
 }
 
-button:hover {
+input[type="submit"]:hover {
   filter: brightness(110%);
   color: rgba(9, 17, 72);
   background-color: #fff;
 }
 
-button:active {
+input[type="submit"]:active {
   transform: translate(0, 0.6rem);
   box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
@@ -257,16 +257,98 @@ section {
 }
 
 .video-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    url("./images/pacman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin: auto;
   text-align: center;
   padding: 5rem;
+  min-height: 70vh;
+}
+
+/* contact */
+
+#contact {
+  min-height: 100vh;
+  background-image: url("./images/contact-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper {
+  background: rgba(19, 28, 39, 0.7);
+  width: 60%;
+  border-radius: 20px;
+}
+
+.form-head {
+  padding: 4rem;
+  text-align: center;
+}
+
+.name,
+.email {
+  padding: 4rem;
+  text-align: center;
+}
+
+label {
+  margin: 0rem 3rem;
+}
+
+.wrapper input {
+  padding: 1rem 2rem;
+}
+
+.wrapper input[type="submit"] {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
 }
 
 /* Media queries */
 
 @media screen and (max-width: 932px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
 
   .hero {
@@ -276,5 +358,35 @@ section {
   #header-img {
     justify-content: center;
     padding: 1rem;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .responsive-iframe {
+    width: 100%;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .name-form,
+  .email-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+
+  .wrapper {
+    width: 90%;
   }
 }
