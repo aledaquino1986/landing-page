@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+/* Global styles */
+
+h1 {
+  font-size: 2.6rem;
+  font-family: "Pattaya", "Poppins", sans-serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+button {
+  padding: 2rem 6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  border-radius: 3rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+  background-color: rgba(9, 17, 72);
+  color: #fff;
+  transition: 0.5s;
+}
+
+button:hover {
+  filter: brightness(110%);
+  color: rgba(9, 17, 72);
+  background-color: #fff;
+}
+
+button:active {
+  transform: translate(0, 0.6rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+/* Header */
+
+#header {
+  background: rgba(9, 17, 72);
+  box-shadow: 20px 20px 60px #423c3c, -20px -20px 60px #5a5151;
+  position: sticky;
+  top: 0px;
+}
+
+nav {
+  color: #fff;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0px;
+}
+
+#header-img {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  flex: 1 1 40rem;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 40rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav img {
+  max-width: 5rem;
+  height: 4rem;
+  filter: invert(90%);
+  margin-left: 1rem;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./images/joystick.png");
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 6rem;
+  padding: 2rem;
+}
+
+.hero h3 {
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+section {
+  scroll-behavior: smooth;
+}
+
+/* Services section */
+
+#services {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent),
+    url("./images/retro.webp");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  color: #fff;
+}
+
+.services-header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services-header h2 {
+  padding: 2rem;
+}
+
+.services-header h3 {
+  text-decoration: underline;
+}
+
+/* Offer */
+
+#offer {
+  background: #92b6bf;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
+    linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent),
+    url("./images/joysticks.jpg");
+}
+
+.offer-header,
+.video-header {
+  background: #343c44;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+
+.offer-header h3 {
+  padding: 1rem;
+  font-weight: normal;
+}
+
+#cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-wrap: wrap;
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 50vh;
+  margin: 2rem 2rem;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-box-shadow: -1px 2px 24px -2px rgba(165, 162, 162, 0.78);
+  box-shadow: -1px 2px 24px -2px rgba(179, 175, 175, 0.78);
+  padding: 1rem;
+  background-color: rgb(224, 222, 222);
+}
+
+.card-icon {
+  background-color: rgba(9, 17, 72);
+  padding: 1rem;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.card h4,
+.card p {
+  padding: 1rem;
+}
+
+/* Video */
+
+#video {
+  min-height: 90vh;
+
+  margin: auto;
+  background: rgb(224, 222, 222);
+}
+
+.video-container {
+  margin: auto;
+  text-align: center;
+  padding: 5rem;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+
+  .hero {
+    background-position: center;
+  }
+
+  #header-img {
+    justify-content: center;
+    padding: 1rem;
+  }
+}
