@@ -18,27 +18,27 @@
 <body>
 
   <header id="header">
-    <nav>
+    <nav id="nav-bar">
       <div id="header-img">
         <h1 id="logo-title">The Tech Store</h1>
         <img src="./images/logo1.png" alt="Joystick logo" id="logo">
       </div>
       <ul>
-        <li class="nav-link">
-          <a href="#services">Services</a>
+        <li>
+          <a href="#services" class="nav-link">Services</a>
         </li>
 
-        <li class="nav-link">
-          <a href="#offer">What we offer</a>
+        <li>
+          <a href="#offer" class="nav-link">What we offer</a>
         </li>
 
 
-        <li class="nav-link">
-          <a href="#video">Video</a>
+        <li>
+          <a href="#video-section" class="nav-link">Video</a>
         </li>
 
-        <li class="nav-link">
-          <a href="#contact">Contact</a>
+        <li>
+          <a href="#contact" class="nav-link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -84,7 +84,7 @@
         </div>
 
         <h4>Retro games</h4>
-        <p>From the magnavox to ps4, you can find all the gaming consoles and games from a wide array of manufacturers.
+        <p>From the magnavox to the ps4, all gaming consoles and games can be found here!.
         </p>
       </div>
       <div class="card">
@@ -109,7 +109,7 @@
   </section>
 
 
-  <section id="video">
+  <section id="video-section">
 
     <header class="video-header">
       <h2>See us in action</h2>
@@ -117,8 +117,9 @@
     </header>
 
     <div class="video-container">
-      <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/BsZccA1nMXs"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      <iframe id="video" class="responsive-iframe" width="560" height="315"
+        src="https://www.youtube.com/embed/BsZccA1nMXs" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
 
     </div>
@@ -137,12 +138,12 @@
           <label for="name">
             Name:
           </label>
-          <input type="name" placeholder="Type in your name">
+          <input type="name" placeholder="Type in your name" name="name">
         </div>
 
         <div class="email">
           <label for="email"> Email: </label>
-          <input type="email" id="email" placeholder="example: alex@gmail.com">
+          <input type="email" id="email" name="email" placeholder="example: alex@gmail.com">
         </div>
 
         <input type="submit" value="submit" id="submit">
@@ -156,14 +157,14 @@
       <h5>Alejandro Aquino &copy</h5>
       <ul>
         <li>
-          <img src="./icons/twitter.svg" alt="">
+          <img src="./icons/twitter.svg" alt="twitter">
         </li>
         <li>
-          <img src="./icons/instagram.svg" alt="">
+          <img src="./icons/instagram.svg" alt="instagram">
         </li>
 
         <li>
-          <img src="./icons/youtube.svg" alt="">
+          <img src="./icons/youtube.svg" alt="youtube">
         </li>
       </ul>
     </div>

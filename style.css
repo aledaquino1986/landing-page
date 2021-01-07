@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
+  scroll-padding-top: 2rem;
 }
 
 /* Global styles */
@@ -71,7 +72,7 @@ input[type="submit"]:active {
 
 #header {
   background: rgba(9, 17, 72);
-  box-shadow: 20px 20px 60px #423c3c, -20px -20px 60px #5a5151;
+  min-height: 10vh;
   position: sticky;
   top: 0px;
 }
@@ -80,7 +81,7 @@ nav {
   color: #fff;
   width: 90%;
   margin: auto;
-  min-height: 10vh;
+
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -183,6 +184,7 @@ section {
 /* Offer */
 
 #offer {
+  scroll-margin-top: 5rem;
   background: #92b6bf;
   background: linear-gradient(rgba(0, 0, 0, 0.7), transparent),
     linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent),
@@ -222,7 +224,7 @@ section {
   flex-wrap: wrap;
   text-align: center;
   flex: 1 1 25rem;
-  min-height: 50vh;
+  min-height: 40vh;
   margin: 2rem 2rem;
   border-radius: 20px 20px 20px 20px;
   -webkit-box-shadow: -1px 2px 24px -2px rgba(165, 162, 162, 0.78);
@@ -249,7 +251,8 @@ section {
 
 /* Video */
 
-#video {
+#video-section {
+  scroll-margin-top: 8rem;
   min-height: 90vh;
 
   margin: auto;
@@ -355,7 +358,7 @@ footer h5 {
     background-position: center;
   }
 
-  #header-img {
+  #header-container {
     justify-content: center;
     padding: 1rem;
   }
